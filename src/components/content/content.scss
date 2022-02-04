@@ -1,0 +1,107 @@
+.container-content {
+    flex: 1 0 auto;
+    margin: 144px 147px;
+    font-style: normal;
+
+    .list-content{
+        max-height: 60vh;
+        overflow-y: scroll;
+        position: center;
+        margin-top: 32px;
+    }
+
+    .content {
+        display: flex;
+        justify-content: space-between;
+
+        .filter{
+
+            button {
+                font-family: Inter;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 14px;
+                color: #1F1F1F;
+                padding: 16px 32px;
+                border: 1px solid #F4F5F4;
+                box-sizing: border-box;
+                border-radius: 8px;
+                background: white;
+                margin-right: 16px;
+                cursor: pointer;
+                transition: 0.5s;
+
+                &:hover {
+                    background: #F4F5FE;
+                    transition: 0.5s;
+                }
+            }
+        }
+
+        .active {
+            background: #F4F5FE!important;
+        }
+
+        .add {
+
+            input {
+                padding: 16px;
+                height: 46px;
+                width: 254px;
+                border: 1px solid #F4F5F4;
+                border-radius: 8px;
+                box-sizing: border-box;
+                outline: none;
+
+                &::placeholder {
+                    font-family: Inter;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 14px;
+                    color: rgba(31, 31, 31, 0.3);
+                }
+            }
+
+            button {
+                font-family: Inter;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 14px;
+                color: #FFF;
+                background: #4448DA;
+                border-radius: 8px;
+                padding: 16px 32px;
+                border: 1px solid #4448DA;
+                cursor: pointer;
+                margin-left: 16px;
+                transition: 0.5s;
+
+                &:hover {
+                    background: #FFF;
+                    color: #4448DA;
+                    transition: 0.5s;
+                }
+            }
+        }
+    }
+
+    .list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 32px;
+        height: 62px;
+        background: #F4F5F4;
+        border-radius: 8px;
+        padding: 0 24px;
+        font-family: Inter;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 14px;
+        color: #1F1F1F;
+
+        div {
+            cursor: pointer;
+        }
+    }
+}

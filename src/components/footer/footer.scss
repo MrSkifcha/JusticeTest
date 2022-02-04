@@ -1,0 +1,57 @@
+.footer {
+    background: #0B0E27;
+    font-style: normal;
+    font-weight: normal;
+    font-family: Inter;
+    height: 185px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+    .menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #3F3F3F;
+        margin: 0 147px;
+
+        a {
+            font-family: Montserrat;
+            color: #FFF;
+            font-size: 24px;
+            font-weight: bold;
+            line-height: 24px;
+            padding: 48px 0;
+            cursor: pointer;
+        }
+
+        &-list a {
+            font-size: 14px;
+            line-height: 14px;
+            color: #FFF;
+            padding-left: 40px;
+            cursor: pointer;
+        }
+    }
+
+    .about-company {
+        display: flex;
+        justify-content: space-between;
+        margin: 24px 147px;
+        align-items: center;
+
+        p {
+            font-size: 12px;
+            line-height: 16px;
+            color: #B4B4B4;
+        }
+
+        div span {
+            padding-left: 66px;
+            font-size: 12px;
+            line-height: 16px;
+            color: #B4B4B4;
+        }
+    }
+}
+

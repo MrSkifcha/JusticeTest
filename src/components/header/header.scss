@@ -1,0 +1,126 @@
+.container-header {
+    border-bottom: 1px solid #F4F5F4;
+    font-family: Inter;
+    font-style: normal;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 147px;
+        height: 88px;
+
+        a {
+            font-family: Montserrat;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 24px;
+            color: #4448DA;
+            cursor: pointer;
+        }
+
+        &-menu {
+            display: flex;
+            align-items: center;
+
+            a {
+                padding: 6px 0;
+                font-family: Inter;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 14px;
+                color: #1F1F1F;
+                cursor: pointer;
+
+                &:hover {
+                    color: #4448DA;
+                    border-bottom: #4448DA solid 2px;
+                }
+            }
+
+            span:nth-of-type(2) a {
+                color: #4448DA;
+                border-bottom: #4448DA solid 2px;
+            }
+
+            span {
+                padding: 0 20px;
+            }
+        }
+
+        button {
+            padding: 12px 24px;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 14px;
+            color: #4448DA;
+            border: 1px solid #4448DA;
+            box-sizing: border-box;
+            border-radius: 8px;
+            background: white;
+            cursor: pointer;
+            transition: 0.5s;
+
+            &:hover {
+                color: white;
+                background: #4448DA;
+                cursor: pointer;
+                transition: 0.5s;
+            }
+        }
+
+        .bell, .person {
+            cursor: pointer;
+        }
+
+        .bell {
+            margin: 0 24px;
+        }
+    }
+}
+
+.hamburger {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 20px;
+    width: 20px;
+    div {
+        height: 2px;
+        background: black;
+        border-radius: 5px;
+        margin: 1px 0px;
+    }
+}
+
+.menu-list-mobile {
+    display: none;
+    text-align: center;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 70%;
+    background: #F4F5FE;
+
+    div {
+        display: flex;
+        justify-content: space-around;
+        height: 10%;
+        align-items: center;
+        margin-top: 10px;
+        div {
+            a {
+                margin-right: 10px;
+            }
+        }
+    }
+}
