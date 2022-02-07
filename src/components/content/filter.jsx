@@ -1,19 +1,16 @@
 import React from 'react';
 
-const Filter = ({options}) => {
-
-    const filterList = (option) => {
-        buttons.map(button => {
-            button.active = true;
-            return button;
-        });
-        console.log(option)
-    }
+const Filter = ({onClick, buttons}) => {
 
     return (
         <div className="filter">
-            {options.map(option =>
-                <button onClick={() => filterList(option)} className={option.active === true ? "active" : ""} key={option.name}>{option.name}</button>
+            {buttons.map(button =>
+                <button onClick={onClick}
+                        className={button.active === true ? "active" : ""}
+                        id={button.name}
+                        key={button.name}>
+                    {button.name}
+                </button>
             )}
         </div>
     );

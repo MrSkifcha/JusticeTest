@@ -1,9 +1,20 @@
-import React from 'react';
+import React, {useState} from 'react';
 import bell from "../../images/icons/bell.png";
 import person from "../../images/icons/person.png";
 import "./header.scss"
 
 const Header = () => {
+
+    const [style, setStyle] = useState("menu-list-mobile-not-active");
+
+    const openMenu = () => {
+        setStyle("menu-list-mobile-active")
+    }
+
+    const closeMenu =() => {
+        setStyle("menu-list-mobile-not-active");
+    }
+
     return (
         <div className="container-header">
             <div className="header">
@@ -18,16 +29,16 @@ const Header = () => {
                     <div className="person"><img src={person}/></div>
                 </div>
                 <div className="header-menu-mobile">
-                    <div className="hamburger">
+                    <div onClick={openMenu} className="hamburger">
                         <div></div>
                         <div></div>
                         <div></div>
                     </div>
-                    <div id="menu-list-mobile" className="menu-list-mobile">
+                    <div className={style}>
                         <div>
                             <a><img src={bell}/></a>
                             <a><img src={person}/></a>
-                            <a>X</a>
+                            <a onClick={closeMenu}>X</a>
                         </div>
                         <div>
                             <button>Выйти</button>
